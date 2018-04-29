@@ -18,7 +18,7 @@ class Game(object):
         
         """
         self.piece_position = [
-            [0 for piece in range(pieces_per_player)] for player in range(self.players)
+            [0] * pieces_per_player for _ in self.players
         ]
 
         """current_player_index: int, indicates whos turn it is, First player has index 0"""
